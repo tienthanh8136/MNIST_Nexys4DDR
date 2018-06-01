@@ -1,0 +1,103 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu May 31 16:50:14 2018
+| Host         : Thanh-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Nexys4_Top_control_sets_placed.rpt
+| Design       : Nexys4_Top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |   149 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             132 |           74 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |             112 |           43 |
+| Yes          | No                    | No                     |              69 |           27 |
+| Yes          | No                    | Yes                    |             832 |          208 |
+| Yes          | Yes                   | No                     |             592 |          205 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|                Clock Signal                |                                        Enable Signal                                       |                                      Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|  nn_sigmoid/mult_acc_hidden_en_reg_i_2_n_0 |                                                                                            |                                                                                            |                1 |              1 |
+|  nn_sigmoid/mult_acc_output_en_reg_i_2_n_0 |                                                                                            |                                                                                            |                1 |              1 |
+|  clk_25Mhz_BUFG                            |                                                                                            |                                                                                            |                1 |              1 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/pix_col[3]_i_1_n_0                                                   | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                1 |              4 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/cam_pix_col[3]_i_2_n_0                                               | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                1 |              4 |
+|  CLK_IBUF_BUFG                             |                                                                                            | DB/LED_OBUF[5]                                                                             |                4 |              7 |
+|  clk_25Mhz_BUFG                            |                                                                                            | VGA_timing_controller/vga_red_temp[3]_i_1_n_0                                              |                4 |              8 |
+|  CLK_IBUF_BUFG                             | select_data_to_neuro_net/image_cnt[7]_i_1_n_0                                              | DB/sysreset                                                                                |                2 |              8 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/img_init_index[8]_i_2_n_0                                                       | nn_sigmoid/img_init_index[8]_i_1_n_0                                                       |                3 |              8 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/time_cnt[8]_i_1_n_0                                                  | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                3 |              9 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/row_cnt[8]_i_1_n_0                                                   | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                4 |              9 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/col_cnt                                                              | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                3 |              9 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/cam_time_cnt[8]_i_1_n_0                                              | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                3 |              9 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/cam_row_cnt[8]_i_1_n_0                                               | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                3 |              9 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/cam_col_cnt                                                          | VGA_timing_controller/cam_pix_col[3]_i_1_n_0                                               |                3 |              9 |
+|  nn_sigmoid/next_state_reg[9]_i_2_n_0      |                                                                                            |                                                                                            |                5 |             10 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/vCounter                                                             | VGA_timing_controller/vCounter[9]_i_1_n_0                                                  |                3 |             10 |
+|  clk_50Mhz_BUFG                            |                                                                                            | DB/sysreset                                                                                |                6 |             11 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/address[12]_i_1_n_0                                                  | DB/sysreset                                                                                |                4 |             13 |
+|  clk_25Mhz_BUFG                            |                                                                                            | DB/sysreset                                                                                |               10 |             15 |
+|  nn_sigmoid/clear_data_reg_i_2_n_0         |                                                                                            |                                                                                            |               14 |             16 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/cam_address[16]_i_1_n_0                                              | DB/sysreset                                                                                |                5 |             17 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/img_rom_addr[16]_i_1_n_0                                                        |                                                                                            |                5 |             17 |
+|  CLK_IBUF_BUFG                             | select_data_to_neuro_net/image_cnt[7]_i_1_n_0                                              | select_data_to_neuro_net/pixel_address[0]_i_1_n_0                                          |                5 |             17 |
+|  clk_25Mhz_BUFG                            | VGA_timing_controller/camera_blank16_out                                                   | VGA_timing_controller/background_address[0]_i_1_n_0                                        |                5 |             18 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/wait_state_cnt                                                                  |                                                                                            |               14 |             24 |
+|  CLK_IBUF_BUFG                             | DB/db_count[31]_i_1_n_0                                                                    |                                                                                            |                8 |             28 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_0_63_0_2_i_1_n_0                                               |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_128_191_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_192_255_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_256_319_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_320_383_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_384_447_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_448_511_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_512_575_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_576_639_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_640_703_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_64_127_0_2_i_1_n_0                                             |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_704_767_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/input_values_reg_768_831_0_2_i_1_n_0                                            |                                                                                            |                8 |             30 |
+|  CLK_IBUF_BUFG                             |                                                                                            | DB/db_count[31]_i_1_n_0                                                                    |                8 |             31 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/ACTIVATION_HIDDEN_LAYER[15].fixed_point_mult_hidden_layer/fixed_mult_return2_15 | nn_sigmoid/ACTIVATION_HIDDEN_LAYER[15].fixed_point_mult_hidden_layer/fixed_mult_return2_18 |               32 |             32 |
+|  clk_50Mhz_BUFG                            |                                                                                            |                                                                                            |               25 |             36 |
+|  CLK_IBUF_BUFG                             |                                                                                            | DB/sysreset                                                                                |               13 |             42 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/hidden_r_addr_1[9]_i_2_n_0                                                      | nn_sigmoid/hidden_r_addr_1[9]_i_1_n_0                                                      |               15 |             44 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/ACTIVATION_OUTPUT_LAYER[9].fixed_point_mult_output_layer/fixed_mult_return2_0   | nn_sigmoid/ACTIVATION_OUTPUT_LAYER[9].fixed_point_mult_output_layer/fixed_mult_return2_2   |               30 |             53 |
+|  CLK_IBUF_BUFG                             |                                                                                            |                                                                                            |               27 |             67 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/wait_state_cnt                                                                  | nn_sigmoid/sigmoid_0[30]_i_1_n_0                                                           |               80 |            310 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/ACTIVATION_OUTPUT_LAYER[0].fixed_point_mult_output_layer/int_result_reg[0]_0    | DB/sysreset                                                                                |               80 |            320 |
+|  clk_50Mhz_BUFG                            | nn_sigmoid/ACTIVATION_HIDDEN_LAYER[1].fixed_point_mult_hidden_layer/int_result_reg[0]_0    | DB/sysreset                                                                                |              128 |            512 |
++--------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+
+

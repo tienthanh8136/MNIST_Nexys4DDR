@@ -1,0 +1,243 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 6004
+
+Current time: 	4/22/18 8:01:54 PM PDT
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Thanh
+User home directory: C:/Users/Thanh
+User working directory: C:/Users/Thanh/Desktop/MIST_Nexys4/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Thanh/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Thanh/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 440 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 28 MB (+26450kb) [00:00:04]
+// [Engine Memory]: 392 MB (+259156kb) [00:00:04]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Thanh\Desktop\MIST_Nexys4\project_1\project_1.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 40 MB (+11541kb) [00:00:08]
+// [Engine Memory]: 509 MB (+102879kb) [00:00:08]
+// [GUI Memory]: 90 MB (+50748kb) [00:00:10]
+// [Engine Memory]: 584 MB (+51270kb) [00:00:10]
+// [GUI Memory]: 99 MB (+4548kb) [00:00:10]
+// [GUI Memory]: 106 MB (+1368kb) [00:00:10]
+// [Engine Memory]: 630 MB (+17547kb) [00:00:11]
+// [GUI Memory]: 114 MB (+2964kb) [00:00:11]
+// [Engine Memory]: 668 MB (+6717kb) [00:00:12]
+// [GUI Memory]: 125 MB (+5449kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 674 MB. GUI used memory: 55 MB. Current time: 4/22/18 8:02:01 PM PDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: C:/Users/Thanh/Desktop/MIST_Nexys4/project_1; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 840.492 ; gain = 195.145 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 716 MB (+15628kb) [00:00:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 716 MB. GUI used memory: 56 MB. Current time: 4/22/18 8:02:17 PM PDT
+// PAPropertyPanels.initPanels (output_weight_0_synth_1) elapsed time: 0.3s
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "output_weight_0_synth_1 ; output_weight_0 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ; 0 ; 0 ; 1 ; 0 ; 0 ; Sun Apr 22 19:07:18 PDT 2018 ; 00:01:54 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7a100tcsg324-1 ; Vivado Synthesis Defaults", 5, "output_weight_0_synth_1", 0, false, false, false, false, true, false); // W:as (JViewport:JComponent, cv:JFrame) - Popup Trigger
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, output_weight_0]", 6, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// [Engine Memory]: 758 MB (+6104kb) [00:00:37]
+// [Engine Memory]: 869 MB (+77612kb) [00:00:41]
+// p:g (cv:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aT:g (F:JPanel, p:g)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a:JButton (JPanel:JComponent, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 64 MB. Current time: 4/22/18 8:02:32 PM PDT
+setFileChooser("C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_0.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_0.coe}] [get_ips output_weight_0] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_0.coe' provided. It will be converted relative to IP Instance files '../../../../../coe_files/output_weight_0.coe' 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'output_weight_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'output_weight_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'output_weight_0'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'output_weight_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'output_weight_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.xci] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run output_weight_0_synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_run -jobs 2 output_weight_0_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 22 20:02:45 2018] Launched output_weight_0_synth_1... Run output will be captured here: C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.runs/output_weight_0_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.xci] -directory C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, output_weight_1]", 7, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// [Engine Memory]: 913 MB (+293kb) [00:01:08]
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 913 MB. GUI used memory: 66 MB. Current time: 4/22/18 8:02:57 PM PDT
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aT:g (F:JPanel, p:g)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a:JButton (JPanel:JComponent, p:g)
+setFileChooser("C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_1.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_1.coe}] [get_ips output_weight_1] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_1.coe' provided. It will be converted relative to IP Instance files '../../../../../coe_files/output_weight_1.coe' 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'output_weight_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'output_weight_1'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'output_weight_1'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'output_weight_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'output_weight_1'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.xci] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run output_weight_1_synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 2 output_weight_1_synth_1 
+// Tcl Message: [Sun Apr 22 20:03:09 2018] Launched output_weight_1_synth_1... Run output will be captured here: C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.runs/output_weight_1_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.xci] -directory C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, output_weight_2]", 8, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aT:g (F:JPanel, p:g)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a:JButton (JPanel:JComponent, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 934 MB. GUI used memory: 69 MB. Current time: 4/22/18 8:03:22 PM PDT
+setFileChooser("C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_2.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_2.coe}] [get_ips output_weight_2] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Thanh/Desktop/MIST_Nexys4/coe_files/output_weight_2.coe' provided. It will be converted relative to IP Instance files '../../../../../coe_files/output_weight_2.coe' 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'output_weight_2'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'output_weight_2'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'output_weight_2'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'output_weight_2'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'output_weight_2'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.xci] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run output_weight_2_synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 2 output_weight_2_synth_1 
+// Tcl Message: [Sun Apr 22 20:03:33 2018] Launched output_weight_2_synth_1... Run output will be captured here: C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.runs/output_weight_2_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.xci] -directory C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, output_weight_3]", 9, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)

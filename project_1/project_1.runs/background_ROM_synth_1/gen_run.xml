@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="background_ROM_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1524450604">
+  <File Type="PA-TCL" Name="background_ROM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="background_ROM_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="background_ROM.vds"/>
+  <File Type="RDS-UTIL" Name="background_ROM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="background_ROM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="background_ROM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="background_ROM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="background_ROM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/background_ROM">
+    <File Path="$PSRCDIR/sources_1/ip/background_ROM/background_ROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="background_ROM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/background_ROM">
+    <File Path="$PSRCDIR/sources_1/ip/background_ROM/background_ROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="background_ROM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

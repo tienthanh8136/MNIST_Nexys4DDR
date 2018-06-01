@@ -1,0 +1,1546 @@
+
+*** Running vivado
+    with args -log Nexys4_Top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Nexys4_Top.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Nexys4_Top.tcl -notrace
+Command: synth_design -top Nexys4_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5384 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 305.629 ; gain = 98.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4_Top' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/Nexys4_Top.v:19]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:16]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter pb_in bound to: 4'b0001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:74]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:78]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:79]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/debounce.v:16]
+INFO: [Synth 8-638] synthesizing module 'num_select' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/num_select.v:19]
+	Parameter intial_label_address bound to: 0 - type: integer 
+	Parameter intial_data_address bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'num_select' (2#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/num_select.v:19]
+INFO: [Synth 8-638] synthesizing module 'data_select' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/data_select.v:19]
+INFO: [Synth 8-256] done synthesizing module 'data_select' (3#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/data_select.v:19]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (4#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'data_and_label' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/data_and_label_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_and_label' (5#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/data_and_label_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'background_ROM' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/background_ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'background_ROM' (6#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/background_ROM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'neuron_network_sigmoid' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:21]
+	Parameter IMG_SIZE bound to: 784 - type: integer 
+	Parameter NUM_NEURONS bound to: 16 - type: integer 
+	Parameter OUTPUT_SIZE bound to: 10 - type: integer 
+	Parameter IDLE bound to: 10'b0000000001 
+	Parameter GET_START_ADDR bound to: 10'b0000000010 
+	Parameter INIT_DATA bound to: 10'b0000000100 
+	Parameter DELAY_AFTER_INIT bound to: 10'b0000001000 
+	Parameter UPDATE_IMG_ROM_ADDR bound to: 10'b0000010000 
+	Parameter MULT_SIGMOID_HIDDEN bound to: 10'b0000100000 
+	Parameter DELAY_AFTER_HIDDEN bound to: 10'b0001000000 
+	Parameter MULT_SIGMOID_OUTPUT bound to: 10'b0010000000 
+	Parameter DELAY_AFTER_OUTPUT bound to: 10'b0100000000 
+	Parameter WAIT_STATE bound to: 10'b1000000000 
+INFO: [Synth 8-638] synthesizing module 'neuron' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron.v:14]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (7#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron.v:14]
+INFO: [Synth 8-638] synthesizing module 'sigmoid_function' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sigmoid_function.v:13]
+	Parameter MAX_VALUE bound to: 65536 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sigmoid_function' (8#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sigmoid_function.v:13]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer_weight' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/hidden_layer_weight_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer_weight' (9#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/hidden_layer_weight_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hidden_weight_rom' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/hidden_weight_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hidden_weight_rom' (10#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/hidden_weight_rom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'output_weight_0' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_weight_0' (11#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'output_weight_1' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_weight_1' (12#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'output_weight_2' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_weight_2' (13#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'output_weight_3' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_weight_3' (14#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'output_weight_4' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_weight_4' (15#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/realtime/output_weight_4_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:243]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:319]
+INFO: [Synth 8-256] done synthesizing module 'neuron_network_sigmoid' (16#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:21]
+INFO: [Synth 8-638] synthesizing module 'VGA_Controller' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:15]
+	Parameter EXPECTED_IMG_SCALE_UP bound to: 10 - type: integer 
+	Parameter EPXECTED_IMG_ORIGINAL_SIZE bound to: 28 - type: integer 
+	Parameter EXPECTED_IMG_ROW_START_LOC bound to: 109 - type: integer 
+	Parameter EXPECTED_IMG_COL_START_LOC bound to: 340 - type: integer 
+	Parameter EXPECTED_IMG_ROW_END_LOC bound to: 389 - type: integer 
+	Parameter EXPECTED_IMG_COL_END_LOC bound to: 620 - type: integer 
+	Parameter BACKGROUND_ROW_START_LOC bound to: 20 - type: integer 
+	Parameter BACKGROUND_COL_START_LOC bound to: 15 - type: integer 
+	Parameter BACKGROUND_ROW_END_LOC bound to: 430 - type: integer 
+	Parameter BACKGROUND_COL_END_LOC bound to: 625 - type: integer 
+	Parameter CAM_IMG_SCALE_UP bound to: 10 - type: integer 
+	Parameter CAM_ORIGINAL_SIZE bound to: 28 - type: integer 
+	Parameter CAM_IMG_ROW_START_LOC bound to: 109 - type: integer 
+	Parameter CAM_IMG_COL_START_LOC bound to: 20 - type: integer 
+	Parameter CAM_IMG_ROW_END_LOC bound to: 389 - type: integer 
+	Parameter CAM_IMG_COL_END_LOC bound to: 300 - type: integer 
+	Parameter hStartSync bound to: 659 - type: integer 
+	Parameter hEndSync bound to: 755 - type: integer 
+	Parameter hMaxCount bound to: 799 - type: integer 
+	Parameter vStartSync bound to: 493 - type: integer 
+	Parameter vEndSync bound to: 494 - type: integer 
+	Parameter vMaxCount bound to: 524 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGA_Controller' (17#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:15]
+INFO: [Synth 8-638] synthesizing module 'sevensegment' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sevensegment.v:35]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter digit1 bound to: 8'b11111110 
+	Parameter digit2 bound to: 8'b11111101 
+	Parameter digit3 bound to: 8'b11111011 
+	Parameter digit4 bound to: 8'b11110111 
+	Parameter digit5 bound to: 8'b11101111 
+	Parameter digit6 bound to: 8'b11011111 
+	Parameter digit7 bound to: 8'b10111111 
+	Parameter digit8 bound to: 8'b01111111 
+INFO: [Synth 8-638] synthesizing module 'Digit' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sevensegment.v:197]
+	Parameter zero bound to: 7'b1000000 
+	Parameter one bound to: 7'b1111001 
+	Parameter two bound to: 7'b0100100 
+	Parameter three bound to: 7'b0110000 
+	Parameter four bound to: 7'b0011001 
+	Parameter five bound to: 7'b0010010 
+	Parameter six bound to: 7'b0000010 
+	Parameter seven bound to: 7'b1111000 
+	Parameter eight bound to: 7'b0000000 
+	Parameter nine bound to: 7'b0010000 
+	Parameter A bound to: 7'b0001000 
+	Parameter B bound to: 7'b0000011 
+	Parameter C bound to: 7'b1000110 
+	Parameter D bound to: 7'b0100001 
+	Parameter E bound to: 7'b0000110 
+	Parameter F bound to: 7'b0001110 
+	Parameter seg_a bound to: 7'b1111110 
+	Parameter seg_b bound to: 7'b1111101 
+	Parameter seg_c bound to: 7'b1111011 
+	Parameter seg_d bound to: 7'b1110111 
+	Parameter seg_e bound to: 7'b1101111 
+	Parameter seg_f bound to: 7'b1011111 
+	Parameter seg_g bound to: 7'b0111111 
+	Parameter upH bound to: 7'b0001001 
+	Parameter upL bound to: 7'b1000111 
+	Parameter upR bound to: 7'b0001000 
+	Parameter lol bound to: 7'b1001111 
+	Parameter lor bound to: 7'b0101111 
+	Parameter blank bound to: 7'b1111111 
+INFO: [Synth 8-256] done synthesizing module 'Digit' (18#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sevensegment.v:197]
+INFO: [Synth 8-256] done synthesizing module 'sevensegment' (19#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sevensegment.v:35]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4_Top' (20#1) [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/Nexys4_Top.v:19]
+WARNING: [Synth 8-3331] design sigmoid_function has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 346.574 ; gain = 139.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 346.574 ; gain = 139.301
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'background_ROM' instantiated as 'background_img' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/Nexys4_Top.v:191]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'data_and_label' instantiated as 'data_label_ROM' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/Nexys4_Top.v:180]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'single_digit_img' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/Nexys4_Top.v:174]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hidden_layer_weight' instantiated as 'nn_sigmoid/hidden_weight_rom_0' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:136]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hidden_weight_rom' instantiated as 'nn_sigmoid/hidden_layer_weight_23' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:143]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'output_weight_0' instantiated as 'nn_sigmoid/output_weight_node_1_2' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:150]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'output_weight_1' instantiated as 'nn_sigmoid/output_weight_node_3_4' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:157]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'output_weight_2' instantiated as 'nn_sigmoid/output_weight_node_5_6' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:164]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'output_weight_3' instantiated as 'nn_sigmoid/output_weight_node_7_8' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:171]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'output_weight_4' instantiated as 'nn_sigmoid/output_weight_node_9_10' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:178]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp/hidden_layer_weight_in_context.xdc] for cell 'nn_sigmoid/hidden_weight_rom_0'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp/hidden_layer_weight_in_context.xdc] for cell 'nn_sigmoid/hidden_weight_rom_0'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_2/output_weight_0_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_1_2'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_2/output_weight_0_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_1_2'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_3/output_weight_1_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_3_4'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_3/output_weight_1_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_3_4'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_4/output_weight_2_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_5_6'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_4/output_weight_2_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_5_6'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_5/output_weight_3_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_7_8'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_5/output_weight_3_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_7_8'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_6/output_weight_4_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_9_10'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_6/output_weight_4_in_context.xdc] for cell 'nn_sigmoid/output_weight_node_9_10'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_7/data_and_label_in_context.xdc] for cell 'data_label_ROM'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_7/data_and_label_in_context.xdc] for cell 'data_label_ROM'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_8/dist_mem_gen_0_in_context.xdc] for cell 'single_digit_img'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_8/dist_mem_gen_0_in_context.xdc] for cell 'single_digit_img'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_9/background_ROM_in_context.xdc] for cell 'background_img'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_9/background_ROM_in_context.xdc] for cell 'background_img'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_10/hidden_weight_rom_in_context.xdc] for cell 'nn_sigmoid/hidden_layer_weight_23'
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/.Xil/Vivado-3244-Thanh-PC/dcp_10/hidden_weight_rom_in_context.xdc] for cell 'nn_sigmoid/hidden_layer_weight_23'
+Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc]
+Finished Parsing XDC File [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 667.457 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'data_label_ROM' at clock pin 'clkb' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/hidden_layer_weight_23' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/hidden_weight_rom_0' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/output_weight_node_1_2' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/output_weight_node_3_4' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/output_weight_node_5_6' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/output_weight_node_7_8' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_sigmoid/output_weight_node_9_10' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shift_pb" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pixel_address" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "int_get_new_img" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron.v:68]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/sigmoid_function.v:61]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:319]
+INFO: [Synth 8-5546] ROM "stored_hidden_weights" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "stored_output_weights" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "input_values" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mult_acc_hidden_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mult_acc_output_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "img_init_index" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "img_rom_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hidden_r_addr_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_state_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:221]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:242]
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cam_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cam_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'an_reg' in module 'sevensegment'
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "an" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:245]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:245]
+WARNING: [Synth 8-327] inferring latch for variable 'mult_acc_output_en_reg' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:215]
+WARNING: [Synth 8-327] inferring latch for variable 'clear_data_reg' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:196]
+WARNING: [Synth 8-327] inferring latch for variable 'mult_acc_hidden_en_reg' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/neuron_network_sigmoid.v:195]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  digit1 |                              000 |                         11111110
+                  digit2 |                              001 |                         11111101
+                  digit3 |                              010 |                         11111011
+                  digit4 |                              011 |                         11110111
+                  digit5 |                              100 |                         11101111
+                  digit6 |                              101 |                         11011111
+                  digit7 |                              110 |                         10111111
+                  digit8 |                              111 |                         01111111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'sevensegment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 80    
+	   3 Input     32 Bit       Adders := 26    
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 52    
++---Registers : 
+	               32 Bit    Registers := 40    
+	               17 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 18    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Multipliers : 
+	                31x31  Multipliers := 26    
+	                15x31  Multipliers := 26    
++---RAMs : 
+	              24K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 114   
+	  10 Input     32 Bit        Muxes := 27    
+	   4 Input     17 Bit        Muxes := 26    
+	  10 Input     17 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 26    
+	   2 Input     14 Bit        Muxes := 27    
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 26    
+	  10 Input     10 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	  10 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 55    
+	   3 Input      1 Bit        Muxes := 11    
+	  10 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Nexys4_Top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 7     
+Module data_select 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module neuron 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sigmoid_function 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                15x31  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+Module neuron_network_sigmoid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 38    
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                4 Bit    Registers := 6     
++---RAMs : 
+	              24K Bit         RAMs := 1     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 27    
+	  10 Input     17 Bit        Muxes := 2     
+	  10 Input     10 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module VGA_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 8     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 2     
+Module Digit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module sevensegment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shift_pb" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "pixel_address" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: Generating DSP fixed_mult_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+DSP Report: operator fixed_mult_return2 is absorbed into DSP fixed_mult_return2.
+INFO: [Synth 8-5546] ROM "wait_state_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mult_acc_output_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mult_acc_hidden_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'cam_time_cnt_reg[8:0]' into 'cam_time_cnt_reg[8:0]' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:124]
+INFO: [Synth 8-4471] merging register 'time_cnt_reg[8:0]' into 'time_cnt_reg[8:0]' [C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/imports/new/VGA_Controller.v:120]
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_red_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cam_time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design sigmoid_function has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 668.379 ; gain = 461.105
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------------+------------------+-----------+----------------------+-------------------------------+
+|Module Name            | RTL Object       | Inference | Size (Depth x Width) | Primitives                    | 
++-----------------------+------------------+-----------+----------------------+-------------------------------+
+|neuron_network_sigmoid | input_values_reg | Implied   | 1 K x 32             | RAM64X1D x 26  RAM64M x 130   | 
++-----------------------+------------------+-----------+----------------------+-------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 14     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neuron           | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sigmoid_function | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[5]' (FDE) to 'nn_sigmoid/img_index_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[4]' (FDE) to 'nn_sigmoid/img_index_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[3]' (FDE) to 'nn_sigmoid/img_index_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[2]' (FDE) to 'nn_sigmoid/img_index_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[1]' (FDE) to 'nn_sigmoid/img_index_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[0]' (FDE) to 'nn_sigmoid/img_index_reg[0]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[6]' (FDE) to 'nn_sigmoid/img_index_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[7]' (FDE) to 'nn_sigmoid/img_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[8]' (FDE) to 'nn_sigmoid/img_index_reg[8]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/img_index_reg_rep[9]' (FDE) to 'nn_sigmoid/img_index_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit7/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit4/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit3/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit2/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit1/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit0/seg_reg[7]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[0]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[0]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[1]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[1]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[2]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[2]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[3]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[3]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[4]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[4]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[5]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit5/seg_reg[5]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SSB/Digit6/seg_reg[6]' (FD) to 'SSB/Digit5/seg_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSB/Digit5/seg_reg[6] )
+INFO: [Synth 8-3886] merging instance 'VGA_timing_controller/vga_blue_temp_reg[0]' (FD) to 'VGA_timing_controller/vga_blue_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[18]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[19]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[20]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[21]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[22]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[23]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[24]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[25]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[26]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'nn_sigmoid/i_0/input_data_reg[30]' (FDE) to 'nn_sigmoid/i_0/input_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSB/seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (select_data_to_neuro_net/pixel_address_reg[17]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[30]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[26]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[25]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[24]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[23]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[22]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[21]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[20]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[19]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (input_data_reg[18]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[5]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[4]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[3]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[2]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[1]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[0]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[6]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[7]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[8]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (img_index_reg_rep[9]) is unused and will be removed from module neuron_network_sigmoid.
+WARNING: [Synth 8-3332] Sequential element (VGA_timing_controller/vga_blue_temp_reg[0]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit7/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[6]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit4/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit3/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit2/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit1/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit0/seg_reg[7]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[0]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[0]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[1]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[1]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[2]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[2]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[3]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[3]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[4]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[4]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[5]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit5/seg_reg[5]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (SSB/Digit6/seg_reg[6]) is unused and will be removed from module Nexys4_Top.
+INFO: [Synth 8-3886] merging instance 'VGA_timing_controller/vga_blue_temp_reg[1]' (FD) to 'VGA_timing_controller/vga_green_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'VGA_timing_controller/vga_green_temp_reg[0]' (FD) to 'VGA_timing_controller/vga_red_temp_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (VGA_timing_controller/vga_green_temp_reg[0]) is unused and will be removed from module Nexys4_Top.
+WARNING: [Synth 8-3332] Sequential element (VGA_timing_controller/vga_blue_temp_reg[1]) is unused and will be removed from module Nexys4_Top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 668.379 ; gain = 461.105
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 668.379 ; gain = 461.105
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:19 . Memory (MB): peak = 733.922 ; gain = 526.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:22 . Memory (MB): peak = 756.605 ; gain = 549.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:36 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:36 . Memory (MB): peak = 856.457 ; gain = 649.184
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:36 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:39 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:39 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:43 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:43 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:44 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:44 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |dist_mem_gen_0      |         1|
+|2     |data_and_label      |         1|
+|3     |background_ROM      |         1|
+|4     |hidden_layer_weight |         1|
+|5     |hidden_weight_rom   |         1|
+|6     |output_weight_0     |         1|
+|7     |output_weight_1     |         1|
+|8     |output_weight_2     |         1|
+|9     |output_weight_3     |         1|
+|10    |output_weight_4     |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |background_ROM      |     1|
+|2     |data_and_label      |     1|
+|3     |dist_mem_gen_0      |     1|
+|4     |hidden_layer_weight |     1|
+|5     |hidden_weight_rom   |     1|
+|6     |output_weight_0     |     1|
+|7     |output_weight_1     |     1|
+|8     |output_weight_2     |     1|
+|9     |output_weight_3     |     1|
+|10    |output_weight_4     |     1|
+|11    |BUFG                |     3|
+|12    |CARRY4              |  1126|
+|13    |DSP48E1             |    52|
+|14    |DSP48E1_1           |   104|
+|15    |LUT1                |  1913|
+|16    |LUT2                |  1081|
+|17    |LUT3                |  1961|
+|18    |LUT4                |  1408|
+|19    |LUT5                |  1408|
+|20    |LUT6                |   877|
+|21    |MUXF7               |   129|
+|22    |RAM64M              |    91|
+|23    |RAM64X1D            |    13|
+|24    |FDCE                |   834|
+|25    |FDRE                |   814|
+|26    |FDSE                |    17|
+|27    |LD                  |    28|
+|28    |IBUF                |     8|
+|29    |OBUF                |    46|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------------+-----------------------+------+
+|      |Instance                                                        |Module                 |Cells |
++------+----------------------------------------------------------------+-----------------------+------+
+|1     |top                                                             |                       | 12777|
+|2     |  DB                                                            |debounce               |   156|
+|3     |  SSB                                                           |sevensegment           |   189|
+|4     |    Digit0                                                      |Digit                  |     7|
+|5     |    Digit1                                                      |Digit_50               |     7|
+|6     |    Digit2                                                      |Digit_51               |     7|
+|7     |    Digit3                                                      |Digit_52               |    14|
+|8     |    Digit4                                                      |Digit_53               |     7|
+|9     |    Digit7                                                      |Digit_54               |    14|
+|10    |  VGA_timing_controller                                         |VGA_Controller         |   430|
+|11    |  nn_sigmoid                                                    |neuron_network_sigmoid | 11382|
+|12    |    \ACTIVATION_HIDDEN_LAYER[1].activation_hidden_layer         |sigmoid_function_12    |     3|
+|13    |    \ACTIVATION_HIDDEN_LAYER[3].activation_hidden_layer         |sigmoid_function_16    |     3|
+|14    |    \ACTIVATION_HIDDEN_LAYER[5].activation_hidden_layer         |sigmoid_function_20    |     3|
+|15    |    \ACTIVATION_HIDDEN_LAYER[7].activation_hidden_layer         |sigmoid_function_24    |     3|
+|16    |    \ACTIVATION_HIDDEN_LAYER[9].activation_hidden_layer         |sigmoid_function_28    |     3|
+|17    |    \ACTIVATION_HIDDEN_LAYER[11].activation_hidden_layer        |sigmoid_function_2     |     3|
+|18    |    \ACTIVATION_HIDDEN_LAYER[13].activation_hidden_layer        |sigmoid_function_6     |     3|
+|19    |    \ACTIVATION_HIDDEN_LAYER[15].activation_hidden_layer        |sigmoid_function_10    |     3|
+|20    |    \ACTIVATION_HIDDEN_LAYER[0].activation_hidden_layer         |sigmoid_function       |     3|
+|21    |    \ACTIVATION_HIDDEN_LAYER[0].fixed_point_mult_hidden_layer   |neuron                 |   340|
+|22    |    \ACTIVATION_HIDDEN_LAYER[10].activation_hidden_layer        |sigmoid_function_0     |     3|
+|23    |    \ACTIVATION_HIDDEN_LAYER[10].fixed_point_mult_hidden_layer  |neuron_1               |   325|
+|24    |    \ACTIVATION_HIDDEN_LAYER[11].fixed_point_mult_hidden_layer  |neuron_3               |   325|
+|25    |    \ACTIVATION_HIDDEN_LAYER[12].activation_hidden_layer        |sigmoid_function_4     |     3|
+|26    |    \ACTIVATION_HIDDEN_LAYER[12].fixed_point_mult_hidden_layer  |neuron_5               |   325|
+|27    |    \ACTIVATION_HIDDEN_LAYER[13].fixed_point_mult_hidden_layer  |neuron_7               |   396|
+|28    |    \ACTIVATION_HIDDEN_LAYER[14].activation_hidden_layer        |sigmoid_function_8     |     3|
+|29    |    \ACTIVATION_HIDDEN_LAYER[14].fixed_point_mult_hidden_layer  |neuron_9               |   325|
+|30    |    \ACTIVATION_HIDDEN_LAYER[15].fixed_point_mult_hidden_layer  |neuron_11              |   427|
+|31    |    \ACTIVATION_HIDDEN_LAYER[1].fixed_point_mult_hidden_layer   |neuron_13              |   357|
+|32    |    \ACTIVATION_HIDDEN_LAYER[2].activation_hidden_layer         |sigmoid_function_14    |     3|
+|33    |    \ACTIVATION_HIDDEN_LAYER[2].fixed_point_mult_hidden_layer   |neuron_15              |   325|
+|34    |    \ACTIVATION_HIDDEN_LAYER[3].fixed_point_mult_hidden_layer   |neuron_17              |   325|
+|35    |    \ACTIVATION_HIDDEN_LAYER[4].activation_hidden_layer         |sigmoid_function_18    |     3|
+|36    |    \ACTIVATION_HIDDEN_LAYER[4].fixed_point_mult_hidden_layer   |neuron_19              |   325|
+|37    |    \ACTIVATION_HIDDEN_LAYER[5].fixed_point_mult_hidden_layer   |neuron_21              |   356|
+|38    |    \ACTIVATION_HIDDEN_LAYER[6].activation_hidden_layer         |sigmoid_function_22    |     3|
+|39    |    \ACTIVATION_HIDDEN_LAYER[6].fixed_point_mult_hidden_layer   |neuron_23              |   325|
+|40    |    \ACTIVATION_HIDDEN_LAYER[7].fixed_point_mult_hidden_layer   |neuron_25              |   325|
+|41    |    \ACTIVATION_HIDDEN_LAYER[8].activation_hidden_layer         |sigmoid_function_26    |     3|
+|42    |    \ACTIVATION_HIDDEN_LAYER[8].fixed_point_mult_hidden_layer   |neuron_27              |   325|
+|43    |    \ACTIVATION_HIDDEN_LAYER[9].fixed_point_mult_hidden_layer   |neuron_29              |   356|
+|44    |    \ACTIVATION_OUTPUT_LAYER[0].activation_output_layer         |sigmoid_function_30    |     3|
+|45    |    \ACTIVATION_OUTPUT_LAYER[0].fixed_point_mult_output_layer   |neuron_31              |   326|
+|46    |    \ACTIVATION_OUTPUT_LAYER[1].activation_output_layer         |sigmoid_function_32    |     3|
+|47    |    \ACTIVATION_OUTPUT_LAYER[1].fixed_point_mult_output_layer   |neuron_33              |   325|
+|48    |    \ACTIVATION_OUTPUT_LAYER[2].activation_output_layer         |sigmoid_function_34    |     3|
+|49    |    \ACTIVATION_OUTPUT_LAYER[2].fixed_point_mult_output_layer   |neuron_35              |   325|
+|50    |    \ACTIVATION_OUTPUT_LAYER[3].activation_output_layer         |sigmoid_function_36    |     3|
+|51    |    \ACTIVATION_OUTPUT_LAYER[3].fixed_point_mult_output_layer   |neuron_37              |   325|
+|52    |    \ACTIVATION_OUTPUT_LAYER[4].activation_output_layer         |sigmoid_function_38    |     3|
+|53    |    \ACTIVATION_OUTPUT_LAYER[4].fixed_point_mult_output_layer   |neuron_39              |   325|
+|54    |    \ACTIVATION_OUTPUT_LAYER[5].activation_output_layer         |sigmoid_function_40    |     3|
+|55    |    \ACTIVATION_OUTPUT_LAYER[5].fixed_point_mult_output_layer   |neuron_41              |   325|
+|56    |    \ACTIVATION_OUTPUT_LAYER[6].activation_output_layer         |sigmoid_function_42    |     3|
+|57    |    \ACTIVATION_OUTPUT_LAYER[6].fixed_point_mult_output_layer   |neuron_43              |   325|
+|58    |    \ACTIVATION_OUTPUT_LAYER[7].activation_output_layer         |sigmoid_function_44    |     3|
+|59    |    \ACTIVATION_OUTPUT_LAYER[7].fixed_point_mult_output_layer   |neuron_45              |   325|
+|60    |    \ACTIVATION_OUTPUT_LAYER[8].activation_output_layer         |sigmoid_function_46    |     3|
+|61    |    \ACTIVATION_OUTPUT_LAYER[8].fixed_point_mult_output_layer   |neuron_47              |   325|
+|62    |    \ACTIVATION_OUTPUT_LAYER[9].activation_output_layer         |sigmoid_function_48    |     3|
+|63    |    \ACTIVATION_OUTPUT_LAYER[9].fixed_point_mult_output_layer   |neuron_49              |   337|
+|64    |  num_select_u                                                  |num_select             |    10|
+|65    |  select_data_to_neuro_net                                      |data_select            |    85|
++------+----------------------------------------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:44 . Memory (MB): peak = 856.457 ; gain = 649.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 856.457 ; gain = 299.773
+Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 856.457 ; gain = 649.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 132 instances were transformed.
+  LD => LDCE: 28 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 91 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 13 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:46 . Memory (MB): peak = 856.457 ; gain = 624.148
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 856.457 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 31 16:47:53 2018...

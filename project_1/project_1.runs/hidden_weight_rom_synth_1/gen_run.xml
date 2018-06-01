@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="hidden_weight_rom_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1524453880">
+  <File Type="PA-TCL" Name="hidden_weight_rom.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hidden_weight_rom_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="hidden_weight_rom.vds"/>
+  <File Type="RDS-UTIL" Name="hidden_weight_rom_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="hidden_weight_rom_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="hidden_weight_rom.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hidden_weight_rom_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="hidden_weight_rom_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hidden_weight_rom">
+    <File Path="$PSRCDIR/sources_1/ip/hidden_weight_rom/hidden_weight_rom.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="hidden_weight_rom"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hidden_weight_rom">
+    <File Path="$PSRCDIR/sources_1/ip/hidden_weight_rom/hidden_weight_rom.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="hidden_weight_rom"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

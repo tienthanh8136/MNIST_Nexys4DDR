@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1527810353">
+  <File Type="OPT-DCP" Name="Nexys4_Top_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="Nexys4_Top_route_status.pb"/>
+  <File Type="PA-TCL" Name="Nexys4_Top.tcl"/>
+  <File Type="RDI-RDI" Name="Nexys4_Top.vdi"/>
+  <File Type="PWROPT-DRC" Name="Nexys4_Top_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Nexys4_Top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Nexys4_Top_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="Nexys4_Top_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Nexys4_Top_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Nexys4_Top.hwdef"/>
+  <File Type="OPT-TIMING" Name="Nexys4_Top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Nexys4_Top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Nexys4_Top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Nexys4_Top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Nexys4_Top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Nexys4_Top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Nexys4_Top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Nexys4_Top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Nexys4_Top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Nexys4_Top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Nexys4_Top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Nexys4_Top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Nexys4_Top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Nexys4_Top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Nexys4_Top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Nexys4_Top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="Nexys4_Top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Nexys4_Top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Nexys4_Top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Nexys4_Top_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Nexys4_Top_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="Nexys4_Top.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Nexys4_Top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Nexys4_Top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Nexys4_Top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Nexys4_Top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Nexys4_Top_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Nexys4_Top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Nexys4_Top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Nexys4_Top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Nexys4_Top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Nexys4_Top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Nexys4_Top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Nexys4_Top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Nexys4_Top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Nexys4_Top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Nexys4_Top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="Nexys4_Top.bin"/>
+  <File Type="BITSTR-MSK" Name="Nexys4_Top.msk"/>
+  <File Type="BITSTR-RBT" Name="Nexys4_Top.rbt"/>
+  <File Type="BITSTR-NKY" Name="Nexys4_Top.nky"/>
+  <File Type="BITSTR-BMM" Name="Nexys4_Top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Nexys4_Top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Nexys4_Top.sysdef"/>
+  <File Type="BG-BGN" Name="Nexys4_Top.bgn"/>
+  <File Type="BG-DRC" Name="Nexys4_Top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/sigmoid_function.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/sigmoid_function.v"/>
+        <Attr Name="ImportTime" Val="1524442304"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/neuron.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/neuron.v"/>
+        <Attr Name="ImportTime" Val="1524442290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1524442132"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/neuron_network_sigmoid.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/neuron_network_sigmoid.v"/>
+        <Attr Name="ImportTime" Val="1524445240"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/VGA_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/VGA_Controller.v"/>
+        <Attr Name="ImportTime" Val="1524442175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/data_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/data_select.v"/>
+        <Attr Name="ImportTime" Val="1524442159"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sevensegment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/sevensegment.v"/>
+        <Attr Name="ImportTime" Val="1524442181"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/num_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/num_select.v"/>
+        <Attr Name="ImportTime" Val="1524442149"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Nexys4_Top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/Nexys4_Top.v"/>
+        <Attr Name="ImportTime" Val="1524445214"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fixed_point_multiplier.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/sources_1/new/fixed_point_multiplier.v"/>
+        <Attr Name="ImportTime" Val="1524442341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/python_hidden_weight.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/output_weight_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/output_weight_1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/output_weight_2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/output_weight_3.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/output_weight_4.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/test_input.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/single_digit.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/back_ground.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/hidden_weight_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../coe_files/hidden_weight_1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Nexys4_Top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys4_MNIST/Nexys4_MNIST/Nexys4_MNIST.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc"/>
+        <Attr Name="ImportTime" Val="1522878771"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="output_weight_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="hidden_layer_weight"/>
+  <BlockFileSet Type="BlockSrcs" Name="background_ROM"/>
+  <BlockFileSet Type="BlockSrcs" Name="data_and_label"/>
+  <BlockFileSet Type="BlockSrcs" Name="output_weight_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="output_weight_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="output_weight_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="output_weight_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hidden_weight_rom"/>
+</GenRun>
