@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="hidden_weight_rom_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1524453880">
-  <File Type="PA-TCL" Name="hidden_weight_rom.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hidden_weight_rom_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="hidden_weight_rom.tcl"/>
   <File Type="RDS-RDS" Name="hidden_weight_rom.vds"/>
   <File Type="RDS-UTIL" Name="hidden_weight_rom_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hidden_weight_rom_utilization_synth.pb"/>

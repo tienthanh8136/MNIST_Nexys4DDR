@@ -2,11 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu May 31 16:45:56 2018
-# Process ID: 3244
-# Current directory: C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1
+# Start of session at: Thu Jun 07 23:10:33 2018
+# Process ID: 8772
+# Current directory: C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log Nexys4_Top.vds -mode batch -messageDb vivado.pb -notrace -source Nexys4_Top.tcl
-# Log file: C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/Nexys4_Top.vds
-# Journal file: C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/synth_1/Nexys4_Top.vds
+# Journal file: C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Nexys4_Top.tcl -notrace

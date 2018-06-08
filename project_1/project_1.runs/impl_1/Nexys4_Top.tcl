@@ -50,53 +50,53 @@ set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.xpr [current_project]
-  set_property ip_repo_paths c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.xpr [current_project]
+  set_property ip_repo_paths c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.cache/ip [current_project]
+  set_property ip_output_repo c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.cache/ip [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.runs/synth_1/Nexys4_Top.dcp
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp]
-  add_files -quiet c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp
-  set_property netlist_only true [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp]
-  read_xdc -mode out_of_context -ref hidden_layer_weight -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight_ooc.xdc]
-  read_xdc -mode out_of_context -ref output_weight_0 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0_ooc.xdc]
-  read_xdc -mode out_of_context -ref output_weight_1 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1_ooc.xdc]
-  read_xdc -mode out_of_context -ref output_weight_2 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2_ooc.xdc]
-  read_xdc -mode out_of_context -ref output_weight_3 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3_ooc.xdc]
-  read_xdc -mode out_of_context -ref output_weight_4 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4_ooc.xdc]
-  read_xdc -mode out_of_context -ref data_and_label -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label_ooc.xdc]
-  read_xdc -mode out_of_context -ref dist_mem_gen_0 -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
-  read_xdc -mode out_of_context -ref background_ROM -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_ooc.xdc]
-  read_xdc -mode out_of_context -ref hidden_weight_rom -cells U0 c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom_ooc.xdc]
-  read_xdc C:/Users/Thanh/Desktop/MNIST_Nexys4/project_1/project_1.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc
+  add_files -quiet C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/synth_1/Nexys4_Top.dcp
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp]
+  add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp
+  set_property netlist_only true [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp]
+  read_xdc -mode out_of_context -ref hidden_layer_weight -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_layer_weight/hidden_layer_weight_ooc.xdc]
+  read_xdc -mode out_of_context -ref output_weight_0 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_0/output_weight_0_ooc.xdc]
+  read_xdc -mode out_of_context -ref output_weight_1 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_1/output_weight_1_ooc.xdc]
+  read_xdc -mode out_of_context -ref output_weight_2 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_2/output_weight_2_ooc.xdc]
+  read_xdc -mode out_of_context -ref output_weight_3 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_3/output_weight_3_ooc.xdc]
+  read_xdc -mode out_of_context -ref output_weight_4 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/output_weight_4/output_weight_4_ooc.xdc]
+  read_xdc -mode out_of_context -ref data_and_label -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label_ooc.xdc]
+  read_xdc -mode out_of_context -ref dist_mem_gen_0 -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
+  read_xdc -mode out_of_context -ref background_ROM -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_ooc.xdc]
+  read_xdc -mode out_of_context -ref hidden_weight_rom -cells U0 c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom_ooc.xdc]
+  read_xdc C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc
   link_design -top Nexys4_Top -part xc7a100tcsg324-1
   write_hwdef -file Nexys4_Top.hwdef
   close_msg_db -file init_design.pb

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="output_weight_2_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1524453236">
-  <File Type="PA-TCL" Name="output_weight_2.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="output_weight_2_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="output_weight_2.tcl"/>
   <File Type="RDS-RDS" Name="output_weight_2.vds"/>
   <File Type="RDS-UTIL" Name="output_weight_2_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="output_weight_2_utilization_synth.pb"/>
