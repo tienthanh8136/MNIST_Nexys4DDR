@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.runs/background_ROM_synth_1'
+HD_PWD='C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/background_ROM_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

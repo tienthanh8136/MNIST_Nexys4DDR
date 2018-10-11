@@ -41,8 +41,8 @@ add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/pr
 set_property used_in_implementation false [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/data_and_label/data_and_label.dcp]
 add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
 set_property used_in_implementation false [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
-add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
-set_property used_in_implementation false [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp]
+add_files -quiet C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
+set_property used_in_implementation false [get_files C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp]
 add_files -quiet c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp
 set_property used_in_implementation false [get_files c:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/hidden_weight_rom/hidden_weight_rom.dcp]
 read_verilog -library xil_defaultlib {

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Jun 07 23:12:54 2018
-# Process ID: 5764
+# Start of session at: Thu Oct 11 17:16:31 2018
+# Process ID: 10432
 # Current directory: C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/impl_1
 # Command line: vivado.exe -log Nexys4_Top.vdi -applog -messageDb vivado.pb -mode batch -source Nexys4_Top.tcl -notrace
 # Log file: C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/impl_1/Nexys4_Top.vdi

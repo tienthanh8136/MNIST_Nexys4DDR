@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
--- Date        : Sun Apr 22 19:33:17 2018
+-- Date        : Thu Oct 11 17:14:13 2018
 -- Host        : Thanh-PC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.vhdl
+--               C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.vhdl
 -- Design      : background_ROM
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

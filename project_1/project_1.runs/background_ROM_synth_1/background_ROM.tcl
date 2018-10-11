@@ -10,13 +10,13 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-read_ip -quiet c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.xci
-set_property is_locked true [get_files c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.xci]
+read_ip -quiet C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.xci
+set_property is_locked true [get_files C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.xci]
 
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
@@ -33,44 +33,44 @@ write_checkpoint -force -noxdef background_ROM.dcp
 catch { report_utilization -file background_ROM_utilization_synth.rpt -pb background_ROM_utilization_synth.pb }
 
 if { [catch {
-  file copy -force C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.runs/background_ROM_synth_1/background_ROM.dcp c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
+  file copy -force C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.runs/background_ROM_synth_1/background_ROM.dcp C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.v
+  write_verilog -force -mode synth_stub C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.v
+  write_verilog -force -mode funcsim C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
-if {[file isdir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ip/background_ROM]} {
+if {[file isdir C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.ip_user_files/ip/background_ROM]} {
   catch { 
-    file copy -force c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.v C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ip/background_ROM
+    file copy -force C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.v C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.ip_user_files/ip/background_ROM
   }
 }
 
-if {[file isdir C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ip/background_ROM]} {
+if {[file isdir C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.ip_user_files/ip/background_ROM]} {
   catch { 
-    file copy -force c:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.vhdl C:/Users/Thanh/Desktop/MIST_Nexys4/project_1/project_1.ip_user_files/ip/background_ROM
+    file copy -force C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.srcs/sources_1/ip/background_ROM/background_ROM_stub.vhdl C:/Users/Thanh/Documents/GitHub/MNIST_Nexys4/MNIST_Nexys4DDR/project_1/project_1.ip_user_files/ip/background_ROM
   }
 }
